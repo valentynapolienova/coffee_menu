@@ -26,6 +26,34 @@ class CoffeeMenuPage extends StatelessWidget {
   /// Everything inside it must be guaranteed to never change and be knowable at compile time.
   const CoffeeMenuPage({super.key});
 
+  /// Only static fields can be declared const in a class.
+  /// A const field must be a compile-time constant.
+  /// A compile-time constant cannot depend on instances — only on the class itself.
+  /// Therefore, only static fields can be const, because static fields belong to the class, not to an instance.
+  /* static const List<Coffee> menu = [
+    Coffee(
+      name: 'Espresso',
+      description: 'Strong and bold, a pure shot of coffee energy.',
+      price: 2.50,
+      imagePath: 'assets/images/espresso.png',
+      roast: Roast.dark,
+    ),
+    Coffee(
+      name: 'Cappuccino',
+      description: 'Espresso with steamed milk and silky foam on top.',
+      price: 3.80,
+      imagePath: 'assets/images/cappuccino.png',
+    ),
+    Coffee(
+      name: 'Iced Latte',
+      description: 'Smooth espresso with cold milk and ice cubes.',
+      price: 4.20,
+      imagePath: 'assets/images/latte.png',
+      isIced: true,
+      roast: Roast.light,
+    ),
+  ];*/
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
